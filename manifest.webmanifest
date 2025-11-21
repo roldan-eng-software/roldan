@@ -1,0 +1,20 @@
+{
+  "name": "Seu Nome - Desenvolvedor",
+  "short_name": "Portfólio",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#06070d",
+  "theme_color": "#7c5dfa",
+  "icons": [
+    {
+      "src": "assets/img/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    },
+    {
+      "src": "assets/img/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    }
+  ]
+}

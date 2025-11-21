@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de desenvolvedor full stack com projetos modernos e responsivos." />
+  <meta property="og:title" content="Portfólio | Seu Nome" />
+  <meta property="og:description" content="Projetos, habilidades e contato de um desenvolvedor focado em experiências digitais." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://roldan-eng-software.github.io" />
+  <meta property="og:image" content="assets/img/og-image.png" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <title>Seu Nome | Desenvolvedor</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Seu Nome",
+    "jobTitle": "Desenvolvedor de Software",
+    "url": "https://roldan-eng-software.github.io",
+    "sameAs": [
+      "https://github.com/roldan-eng-software",
+      "https://www.linkedin.com/in/roldan-eng-software"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <header class="header" id="top">
+    <div class="container header__content">
+      <a class="logo" href="#hero" aria-label="Voltar para o início">
+        <img src="assets/img/logo.svg" alt="Logo pessoal" width="48" height="48" />
+        <span>Seu Nome</span>
+      </a>
+      <nav class="nav" aria-label="Navegação principal">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav__links" id="menu">
+          <a href="#about">Sobre</a>
+          <a href="#projects">Projetos</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contato</a>
+          <button class="theme-toggle" aria-label="Alternar modo de cor">
+            <span class="theme-toggle__icon"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="hero">
+      <div class="container hero__grid">
+        <div class="hero__text" data-aos="fade-up">
+          <p class="eyebrow">Disponível para oportunidades</p>
+          <h1>Construo experiências digitais escaláveis e centradas no usuário.</h1>
+          <p class="subtitle">Sou um desenvolvedor focado em criar produtos acessíveis, performáticos e com alto impacto em negócios.</p>
+          <div class="hero__actions">
+            <a class="btn btn-primary" href="#projects">Ver projetos</a>
+            <a class="btn btn-secondary" href="#contact">Entrar em contato</a>
+          </div>
+        </div>
+        <div class="hero__visual" data-aos="fade-left">
+          <img src="assets/img/avatar.svg" alt="Retrato ilustrado do desenvolvedor" loading="lazy" width="360" height="360" />
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about__grid">
+        <div class="about__media" data-aos="zoom-in">
+          <img src="assets/img/avatar.svg" alt="Foto do desenvolvedor" loading="lazy" />
+        </div>
+        <div class="about__content" data-aos="fade-up">
+          <h2>Sobre mim</h2>
+          <p>Tenho experiência em frontend, backend e DevOps, colaborando com times ágeis para construir produtos que proporcionem valor real aos usuários. Escrevo código limpo, testável e com foco em acessibilidade.</p>
+          <ul class="about__highlights">
+            <li>6+ anos construindo produtos digitais</li>
+            <li>Expertise em arquitetura de design systems</li>
+            <li>Certificações em AWS e UX</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Portfólio selecionado</p>
+          <h2>Projetos em destaque</h2>
+          <div class="projects__filters" role="tablist" aria-label="Filtro de projetos">
+            <button class="chip is-active" data-filter="all" role="tab" aria-selected="true">Todos</button>
+            <button class="chip" data-filter="frontend" role="tab" aria-selected="false">Frontend</button>
+            <button class="chip" data-filter="backend" role="tab" aria-selected="false">Backend</button>
+            <button class="chip" data-filter="devops" role="tab" aria-selected="false">DevOps</button>
+          </div>
+        </div>
+        <div class="projects__grid" id="projects-grid" aria-live="polite">
+          <div class="loader" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Stack principal</p>
+          <h2>Habilidades & Ferramentas</h2>
+        </div>
+        <div class="skills__grid">
+          <article class="skill-card" data-aos="fade-up">
+            <h3>Frontend</h3>
+            <ul>
+              <li>React, Next.js, Astro</li>
+              <li>TypeScript, Zustand</li>
+              <li>CSS Modules, Tailwind, Styled Systems</li>
+            </ul>
+          </article>
+          <article class="skill-card" data-aos="fade-up" data-aos-delay="100">
+            <h3>Backend</h3>
+            <ul>
+              <li>Node.js, Deno, Bun</li>
+              <li>Python, FastAPI, Django</li>
+              <li>PostgreSQL, MongoDB, Redis</li>
+            </ul>
+          </article>
+          <article class="skill-card" data-aos="fade-up" data-aos-delay="200">
+            <h3>DevOps</h3>
+            <ul>
+              <li>AWS, Vercel, Azure</li>
+              <li>Docker, Kubernetes</li>
+              <li>CI/CD GitHub Actions</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact__grid">
+        <div class="contact__info" data-aos="fade-right">
+          <p class="eyebrow">Vamos conversar</p>
+          <h2>Entre em contato</h2>
+          <p>Aberto para oportunidades full-time, freelas e colaborações. Respondo normalmente em até 24h.</p>
+          <ul class="social-links">
+            <li><a href="https://github.com/roldan-eng-software" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/roldan-eng-software" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a></li>
+            <li><a href="https://twitter.com/roldan_eng" target="_blank" rel="noopener" aria-label="Twitter">Twitter</a></li>
+            <li><button class="copy-email" data-email="contato@roldan.dev" aria-label="Copiar e-mail">Copiar e-mail</button></li>
+          </ul>
+        </div>
+        <div class="contact__form" data-aos="fade-left">
+          <form id="contact-form" action="https://formsubmit.co/contato@roldan.dev" method="POST" novalidate>
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome" required minlength="2" />
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="voce@email.com" required />
+
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="4" placeholder="Vamos construir algo incrível" required></textarea>
+
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="https://roldan-eng-software.github.io/obrigado" />
+            <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__content">
+      <p>© <span id="year"></span> Seu Nome. Todos os direitos reservados.</p>
+      <a href="#top" class="back-to-top" aria-label="Voltar ao topo">Topo</a>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Voltar ao topo">
+    <span>&uarr;</span>
+  </button>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+  <script src="js/smooth-scroll.js" defer></script>
+  <script src="js/script.js" defer></script>
+</body>
+</html>

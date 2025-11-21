@@ -1,0 +1,14 @@
+language: pt
+reviews:
+  high_level_summary: true
+path_filters:
+  exclude:
+    - node_modules/**
+    - .git/**
+path_instructions:
+  - paths:
+      - index.html
+      - css/styles.css
+      - js/script.js
+    instructions: |
+      Foque em acessibilidade (aria, contraste, navegação via teclado) e performance (tamanho de bundles, animações, lazy loading). Priorize avisos sobre regressões de UX.

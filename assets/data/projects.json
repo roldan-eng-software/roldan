@@ -1,0 +1,34 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Dashboard Analytics",
+      "description": "Plataforma de métricas em tempo real com foco em usabilidade e performance.",
+      "image": "assets/img/project-placeholder.svg",
+      "tags": ["React", "TypeScript", "Node.js"],
+      "category": "frontend",
+      "link": "https://github.com/usuario/dashboard-analytics",
+      "demo": "https://dashboard.com"
+    },
+    {
+      "id": 2,
+      "title": "API Payments",
+      "description": "Gateway de pagamentos com testes automatizados e observabilidade integrada.",
+      "image": "assets/img/project-placeholder.svg",
+      "tags": ["FastAPI", "PostgreSQL", "Docker"],
+      "category": "backend",
+      "link": "https://github.com/usuario/api-payments",
+      "demo": "https://api-payments.com"
+    },
+    {
+      "id": 3,
+      "title": "Infra IaC",
+      "description": "Pipelines IaC com Terraform, monitoração e deploy multi-ambiente.",
+      "image": "assets/img/project-placeholder.svg",
+      "tags": ["Terraform", "AWS", "GitHub Actions"],
+      "category": "devops",
+      "link": "https://github.com/usuario/infra-iac",
+      "demo": "https://infra.live"
+    }
+  ]
+}

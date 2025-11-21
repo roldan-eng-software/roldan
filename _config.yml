@@ -1,0 +1,11 @@
+title: "Seu Nome - Desenvolvedor"
+description: "Portfólio de Projetos"
+theme: jekyll-theme-minimal
+baseurl: "/seu-repositorio"
+url: "https://seu-usuario.github.io"
+markdown: kramdown
+exclude:
+  - node_modules
+  - dist
+  - scripts
+  - package-lock.json
