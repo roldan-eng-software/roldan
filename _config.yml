@@ -1,8 +1,8 @@
-title: "Seu Nome - Desenvolvedor"
-description: "Portfólio de Projetos"
+title: "Roldan Eng Software - Desenvolvedor"
+description: "Portfólio de Roldan Eng Software"
 theme: jekyll-theme-minimal
-baseurl: "/seu-repositorio"
-url: "https://seu-usuario.github.io"
+baseurl: "/roldan-eng-software"
+url: "https://roldan-eng-software.github.io"
 markdown: kramdown
 exclude:
   - node_modules
